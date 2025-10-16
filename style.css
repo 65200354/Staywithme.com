@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Alexandria';
+  src: url('fonts/Alexandria/static/Alexandria-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.bg-gradient {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0; left: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 50%, #fffff0 0%, #d6ffff 50%, #b3e5fc 100%);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-main {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.main-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 800;
+  color: #bfa528;
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin: 0 0 18px 0;
+  text-shadow:
+    0 4px 0 #fff,
+    0 8px 16px #000;
+}
+
+.main-title span {
+  color: #d4b200;
+}
+
+.main-title {
+  font-family: 'Alexandria', Arial, sans-serif;
+  font-weight: 700;
+  color: #bfa528;
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin: 0 0 18px 0;
+  text-shadow:
+    0 4px 0 #fff,
+    2px 2px 8px rgba(0,0,0,0.18);
+}
+
+.checkin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0 0 0;
+  padding: 7px 22px;
+  border-radius: 18px;
+  background: #fff;
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #e74c3c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.checkin-btn i {
+  margin-right: 6px;
+  color: #e74c3c;
+  font-size: 1.1em;
+}
+
+.checkin-btn .province {
+  color: #e74c3c;
+  font-weight: 400;
+  margin-left: 4px;
+  font-size: 0.95em;
+}
+
+.checkin-btn:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.website-link {
+  margin-top: 36px;
+  font-size: 1.3rem;
+  color: #666;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 0 2px 8px #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-title {
+      
+        .main-title {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 800;
+      color: #bfa528;
+      text-align: center;
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      line-height: 1.1;
+      margin: 0 0 18px 0;
+      text-shadow:
+        0 4px 0 #fff,
+        0 8px 16px #000;
+    }
+  }
+  .logo-main {
+    width: 120px;
+    height: 120px;
+  }
+  .website-link {
+    font-size: 1rem;
+  }
+}
